@@ -1,0 +1,57 @@
+.margin-t-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+a {
+    color: #999caa;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.index-new-information {
+    width: 100%;
+    height: 240px;
+}
+
+.index-product-information {
+    position: relative;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    .index-new-information img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+    .overflow-h {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 16px;
+        font-weight: bold;
+        color: #515769;
+        height: 40px;
+        line-height: 40px;
+    }
+    p {
+        font-size: 15px;
+        font-weight: 400;
+        color: #a6a7aa;
+        margin-bottom: 15px;
+        line-height: 30px;
+    }
+    .loadMore {
+        padding: 7px 5px;
+        border: 1px solid #ccc;
+        color: #999caa;
+        text-align: center;
+        display: inline-block;
+        width: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}

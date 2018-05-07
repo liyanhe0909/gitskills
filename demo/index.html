@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style type="text/css">
+canvas{
+    background: black;
+    opacity:0.7;
+    filter: alpha(opacity=0.7);
+    border-radius: 50%;
+}
+#myCanvas{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+#myCanvas02{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    opacity:0;
+    z-index: 999;
+}
+#canvas_div{
+    transform-style: preserve-3d;
+}
+.floor{
+    width: 600px;
+    height: 600px;
+    background: #ccc;
+    transform: rotateX(60deg) translateX(-300px);
+
+}
+.floor .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+  transform: rotateX(90deg) translateZ(-150px);
+  z-index: -1;
+}
+        </style>
+    </head>
+    <body>
+        <div id="canvas_div">
+            <canvas id="myCanvas">您的浏览器不支持canvas</canvas>
+            <canvas id="myCanvas02">您的浏览器不支持canvas</canvas>
+            <!--<div class="floor"><span class="shadow"></span></div>-->
+        </div>
+        <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/start.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
